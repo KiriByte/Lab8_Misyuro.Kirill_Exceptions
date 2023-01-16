@@ -11,7 +11,7 @@ class Program
             try
             {
                 Console.Write($"{user.login,25}{user.password,25}{user.confirmPassword,25}");
-                new CheckLoginPassword().Check(user.login, user.password, user.confirmPassword);
+                CheckLoginPassword.Check(user.login, user.password, user.confirmPassword);
                 Console.WriteLine("\tPASS");
             }
             catch (Exception ex)

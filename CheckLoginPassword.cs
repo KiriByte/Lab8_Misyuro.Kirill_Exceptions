@@ -2,7 +2,7 @@
 
 public class CheckLoginPassword
 {
-    public bool Check(string login, string password, string confirmPassword)
+    public static bool Check(string login, string password, string confirmPassword)
     {
         if (login.Length >= 20) throw new WrongLoginException("Login too long");
         if (login.Any(c => char.IsWhiteSpace(c)))
